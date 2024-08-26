@@ -1,0 +1,7 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  ProductUpdateStream:
+    Type: AWS::Kinesis::Stream
+    Properties:
+      Name: product-updates-stream
+      ShardCount: 1
